@@ -40,7 +40,7 @@ set shiftwidth=4                  " normal mode indentation commands use 2 space
 set showcmd
 set smartcase                     " case-sensitive search if any caps
 set softtabstop=4                 " insert mode tab and backspace use 2 spaces
-set tabstop=8                     " actual tabs occupy 8 characters
+set tabstop=4                     " actual tabs occupy 8 characters
 set t_vb=
 set visualbell
 set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc
