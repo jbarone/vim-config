@@ -89,5 +89,6 @@ autocmd VimResized * :wincmd =
 if (&t_Co == 256 || has('gui_running'))
     set background=dark
     colorscheme solarized
+    call togglebg#map("<F5>")
 endif
 
