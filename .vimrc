@@ -12,7 +12,7 @@ set autoindent
 set autoread                      " reload files when changed on disk, i.e. via `git checkout`
 set backspace=indent,eol,start    " Fix broken backspace in some setups
 set backupcopy=yes                " see :help crontab
-set clipboard=unnamed             " yank and paste with the system clipboard
+set clipboard=unnamedplus         " yank and paste with the system clipboard
 set cmdheight=2
 set colorcolumn=80
 set confirm
@@ -86,8 +86,8 @@ let g:gitgutter_enabled = 0
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd VimResized * :wincmd =
 
+set background=dark
 if (&t_Co == 256 || has('gui_running'))
-    set background=dark
     colorscheme solarized
     call togglebg#map("<F5>")
 endif
