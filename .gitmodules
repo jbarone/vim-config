@@ -37,3 +37,6 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/vim-flake8"]
+	path = bundle/vim-flake8
+	url = git@github.com:nvie/vim-flake8.git
