@@ -13,7 +13,7 @@ set autoread                      " reload files when changed on disk, i.e. via 
 set backspace=indent,eol,start    " Fix broken backspace in some setups
 set backupcopy=yes                " see :help crontab
 set clipboard=unnamed             " yank and paste with the system clipboard
-set cmdheight=2
+set cmdheight=1
 set colorcolumn=80
 set confirm
 set directory-=.                  " don't store swapfiles in the current directory
@@ -92,3 +92,11 @@ if (&t_Co == 256 || has('gui_running'))
     call togglebg#map("<F5>")
 endif
 
+"Strictly necessary for Powerline
+set encoding=utf-8
+"Set to whatever font you like.
+set guifont=Inconsolata\ for\ Powerline:h12
+
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
